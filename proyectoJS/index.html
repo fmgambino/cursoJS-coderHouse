@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/proyectoJS/asset/css/myStyle.css">
+    <title>Proyecto Final JS</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+          <div class="col col-md-8 mr-md-auto ml-md-auto">
+            <div id="contenido">
+              <header>
+                <h1 class="text-center">DOLAR HOY</h1>
+              </header>
+              <div class="row contenido-formulario">
+                <div class="col col-md-10 mr-md-auto ml-md-auto">
+                  <form action="#" id="cotizar-dolar">
+                    <div class="form-group">
+                      <label for="marca">Banco:</label>
+                      <select class="form-control" id="marca">
+                        <option value="">- Seleccionar -</option>
+                        <option value="1">Brubank</option>
+                        <option value="2">MercadoPago</option>
+                        <option value="3">ReBank</option>
+                      </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                    <!-- <label for="anio">Año:</label> -->
+                    <label for="saldo">Saldo:</label>
+                     <input id="saldito"><br><br>
+                      <!-- <select class="form-control" id="anio"> -->
+      
+                      </select>
+                    </div>
+                    <fieldset class="form-group">
+                      <div class="row">
+                        <legend class="col-form-legend col-12">Tipo de Cambio</legend>
+      
+                        <div class="col12">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="tipo" value="oficial" checked>
+                              Oficial
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="radio" name="tipo" value="paralelo">
+                              Paralelo
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+      
+                    <div id="cargando">
+                      <img src="/proyectoJS/asset/img/spinner.gif">
+                    </div>
+                    <div id="resultado"></div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-raised btn-primary">Cotizar
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!--#contenido-->
+          </div>
+        </div>
+      </div>
+
+<script src="/proyectoJS/asset/js/main.js"></script>
+
+</body>
+</html>
